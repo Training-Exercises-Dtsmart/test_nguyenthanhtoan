@@ -15,7 +15,7 @@ class LeaveRequest extends ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'start_date', 'end_date'], 'required'],
+            [['user_id', 'start_date', 'end_date', 'reason'], 'required'],
             [['user_id'], 'integer'],
             [['start_date', 'end_date'], 'safe'],
             [['status'], 'string', 'max' => 50],

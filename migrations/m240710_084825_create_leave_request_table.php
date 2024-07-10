@@ -17,6 +17,7 @@ class m240710_084825_create_leave_request_table extends Migration
             'user_id' => $this->integer()->notNull(),
             'start_date' => $this->date(),
             'end_date' => $this->date(),
+            'reason' => $this->string(),
             'status' => $this->string(50)->notNull()->defaultValue('pending'), // 'pending', 'approved', 'disapproved'
             'created_at' => $this->dateTime(),
             'updated_at' => $this->dateTime(),

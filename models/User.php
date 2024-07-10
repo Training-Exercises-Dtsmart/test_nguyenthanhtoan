@@ -29,7 +29,6 @@ class User extends ActiveRecord implements IdentityInterface
 
     public static function findIdentityByAccessToken($token, $type = null)
     {
-        // Implement if using tokens
     }
 
     public function getId()
@@ -39,12 +38,10 @@ class User extends ActiveRecord implements IdentityInterface
 
     public function getAuthKey()
     {
-        // Implement if using auth keys
     }
 
     public function validateAuthKey($authKey)
     {
-        // Implement if using auth keys
     }
 
     public static function findByUsername($username)
